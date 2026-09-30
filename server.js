@@ -7,3 +7,9 @@ app.get("/carros", (req,res)=>{
 })
 
 app.listen(3001, ()=>{console.log("servidor rodando")});
+
+app.get("/carros/mercedes", (req,res)=>{
+    res.send("servidor da mercedes");
+})
+
+app.listen(3001, ()=>{console.log("servidor rodando")});
