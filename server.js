@@ -2,6 +2,8 @@ import express from "express"
 
 const app = express ();
 
-app.listen(3000, () => {
-    console.log("servidor rodando na porta 3000")
-});
+app.get("/carros", (req,res)=>{
+    res.send("servidor de carro funcionando");
+})
+
+app.listen(3001, ()=>{console.log("servidor rodando")});
